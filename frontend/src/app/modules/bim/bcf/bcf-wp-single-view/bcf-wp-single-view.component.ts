@@ -206,8 +206,8 @@ export class BcfWpSingleViewComponent implements AfterViewInit, OnDestroy {
     this.galleryOptions = options;
   }
 
-  private get showIndex() {
-    return this.galleryOptions[0].startIndex;
+  private get showIndex():number {
+    return this.galleryOptions[0].startIndex!;
   }
 
   private get topicUUID():string|null {
